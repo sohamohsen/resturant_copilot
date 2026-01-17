@@ -1,4 +1,40 @@
 package com.research.model;
 
 public class Staff {
+    private int id;
+    private String fullName;
+    private String role; // Waiter, Chef, etc.
+    private String email;
+    private String phone;
+
+    public Staff(int id, String fullName, String role, String email, String phone) {
+        this.id = id;
+        this.fullName = fullName;
+        this.role = role;
+        this.email = email;
+        this.phone = phone;
+    }
+
+    // Getters and setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+    public String getFullName() { return fullName; }
+    public void setFullName(String fullName) { this.fullName = fullName; }
+    public String getRole() { return role; }
+    public void setRole(String role) { this.role = role; }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
+
+    @Override
+    public String toString() {
+        return "Staff{" +
+                "id=" + id +
+                ", fullName='" + fullName + '\'' +
+                ", role='" + role + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
+    }
 }
